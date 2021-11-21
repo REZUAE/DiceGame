@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace DiceGame
 {
-    public partial class Form1 : Form
+    public partial class Form3 : Form
     {
-        public Form1()
+        public Form3()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void lblPoint_Click(object sender, EventArgs e)
         {
 
         }
