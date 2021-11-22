@@ -21,5 +21,14 @@ namespace DiceGame
         {
 
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            pictureBox5.Load(commonData.imgProfile1);
+            pictureBox1.Load(commonData.imgProfile2);
+            pictureBox2.Load(commonData.imgProfile3);
+            pictureBox3.Load(commonData.imgProfile4);
+
+        }
     }
 }
