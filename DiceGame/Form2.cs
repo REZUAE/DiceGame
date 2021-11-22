@@ -265,9 +265,14 @@ namespace DiceGame
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
+            commonData.PlayerName1 = textBox1.Text;
+            commonData.PlayerName2 = textBox2.Text;
+            commonData.PlayerName3 = textBox3.Text;
+            commonData.PlayerName4 = textBox4.Text;
             Form3 a2 = new Form3();
             a2.ShowDialog();
 
+            
         }
     }
 }

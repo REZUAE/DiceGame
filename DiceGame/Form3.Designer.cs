@@ -128,9 +128,8 @@ namespace DiceGame
             this.lblPlayer1.Font = new System.Drawing.Font("Microsoft Uighur", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer1.Location = new System.Drawing.Point(184, 40);
             this.lblPlayer1.Name = "lblPlayer1";
-            this.lblPlayer1.Size = new System.Drawing.Size(81, 43);
+            this.lblPlayer1.Size = new System.Drawing.Size(0, 43);
             this.lblPlayer1.TabIndex = 8;
-            this.lblPlayer1.Text = "Name";
             // 
             // pictureBox5
             // 

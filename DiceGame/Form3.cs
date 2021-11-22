@@ -29,6 +29,12 @@ namespace DiceGame
             pictureBox2.Load(commonData.imgProfile3);
             pictureBox3.Load(commonData.imgProfile4);
 
+            lblPlayer1.Text = (commonData.PlayerName1);
+            label5.Text = (commonData.PlayerName2);
+            label9.Text = (commonData.PlayerName3);
+            label13.Text = (commonData.PlayerName4);
+
+
         }
     }
 }
