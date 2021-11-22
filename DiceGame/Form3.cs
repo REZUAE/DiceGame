@@ -17,6 +17,9 @@ namespace DiceGame
             InitializeComponent();
         }
 
+        int CurrentRound = 0;
+        
+
         private void lblPoint_Click(object sender, EventArgs e)
         {
 
@@ -34,6 +37,10 @@ namespace DiceGame
             label9.Text = (commonData.PlayerName3);
             label13.Text = (commonData.PlayerName4);
 
+            lblTotalRound.Text = (Convert.ToString(commonData.TotalNumberOfRounds));
+
+            
+ 
 
         }
     }

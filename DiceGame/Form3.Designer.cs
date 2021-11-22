@@ -55,6 +55,9 @@ namespace DiceGame
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lblCurrentRound = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.lblTotalRound = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -72,7 +75,7 @@ namespace DiceGame
             this.lblRound.BackColor = System.Drawing.Color.Transparent;
             this.lblRound.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRound.ForeColor = System.Drawing.Color.Crimson;
-            this.lblRound.Location = new System.Drawing.Point(476, 44);
+            this.lblRound.Location = new System.Drawing.Point(425, 44);
             this.lblRound.Name = "lblRound";
             this.lblRound.Size = new System.Drawing.Size(123, 39);
             this.lblRound.TabIndex = 0;
@@ -95,7 +98,7 @@ namespace DiceGame
             // 
             this.lblBank.AutoSize = true;
             this.lblBank.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblBank.Location = new System.Drawing.Point(173, 135);
+            this.lblBank.Location = new System.Drawing.Point(173, 126);
             this.lblBank.Name = "lblBank";
             this.lblBank.Size = new System.Drawing.Size(60, 20);
             this.lblBank.TabIndex = 15;
@@ -167,7 +170,7 @@ namespace DiceGame
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(173, 135);
+            this.label1.Location = new System.Drawing.Point(173, 126);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 20);
             this.label1.TabIndex = 15;
@@ -191,7 +194,7 @@ namespace DiceGame
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Player 1";
+            this.label4.Text = "Player 2";
             // 
             // label5
             // 
@@ -253,7 +256,7 @@ namespace DiceGame
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(45, 13);
             this.label8.TabIndex = 6;
-            this.label8.Text = "Player 1";
+            this.label8.Text = "Player 3";
             // 
             // label9
             // 
@@ -315,7 +318,7 @@ namespace DiceGame
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(45, 13);
             this.label12.TabIndex = 6;
-            this.label12.Text = "Player 1";
+            this.label12.Text = "Player 4";
             // 
             // label13
             // 
@@ -336,12 +339,51 @@ namespace DiceGame
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
             // 
+            // lblCurrentRound
+            // 
+            this.lblCurrentRound.AutoSize = true;
+            this.lblCurrentRound.BackColor = System.Drawing.Color.Transparent;
+            this.lblCurrentRound.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurrentRound.ForeColor = System.Drawing.Color.Crimson;
+            this.lblCurrentRound.Location = new System.Drawing.Point(554, 44);
+            this.lblCurrentRound.Name = "lblCurrentRound";
+            this.lblCurrentRound.Size = new System.Drawing.Size(37, 39);
+            this.lblCurrentRound.TabIndex = 44;
+            this.lblCurrentRound.Text = "1";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Crimson;
+            this.label15.Location = new System.Drawing.Point(588, 44);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(28, 39);
+            this.label15.TabIndex = 45;
+            this.label15.Text = "/";
+            // 
+            // lblTotalRound
+            // 
+            this.lblTotalRound.AutoSize = true;
+            this.lblTotalRound.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotalRound.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalRound.ForeColor = System.Drawing.Color.Crimson;
+            this.lblTotalRound.Location = new System.Drawing.Point(613, 44);
+            this.lblTotalRound.Name = "lblTotalRound";
+            this.lblTotalRound.Size = new System.Drawing.Size(37, 39);
+            this.lblTotalRound.TabIndex = 46;
+            this.lblTotalRound.Text = "0";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1070, 658);
+            this.Controls.Add(this.lblTotalRound);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.lblCurrentRound);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -397,5 +439,8 @@ namespace DiceGame
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label lblCurrentRound;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblTotalRound;
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DiceGame
 {
-    class Player
+     public class Player
     {
         string name;
         string avatar;

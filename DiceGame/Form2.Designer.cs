@@ -132,7 +132,6 @@ namespace DiceGame
             this.label1.Size = new System.Drawing.Size(189, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Number of Players";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtNumbOfPlayers
             // 
@@ -192,7 +191,6 @@ namespace DiceGame
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 7;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -232,6 +230,7 @@ namespace DiceGame
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox5);
+            this.panel1.Enabled = false;
             this.panel1.Location = new System.Drawing.Point(23, 68);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(393, 236);
@@ -240,6 +239,7 @@ namespace DiceGame
             // PictureBoxPlayer1
             // 
             this.PictureBoxPlayer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBoxPlayer1.Image = global::DiceGame.Properties.Resources.Deafult;
             this.PictureBoxPlayer1.Location = new System.Drawing.Point(262, 19);
             this.PictureBoxPlayer1.Name = "PictureBoxPlayer1";
             this.PictureBoxPlayer1.Size = new System.Drawing.Size(118, 98);
@@ -355,6 +355,7 @@ namespace DiceGame
             // 
             // pictureBoxPlayer2
             // 
+            this.pictureBoxPlayer2.Image = global::DiceGame.Properties.Resources.Deafult;
             this.pictureBoxPlayer2.Location = new System.Drawing.Point(262, 19);
             this.pictureBoxPlayer2.Name = "pictureBoxPlayer2";
             this.pictureBoxPlayer2.Size = new System.Drawing.Size(118, 98);
@@ -375,6 +376,7 @@ namespace DiceGame
             this.panel2.Controls.Add(this.pictureBox11);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.pictureBox12);
+            this.panel2.Enabled = false;
             this.panel2.Location = new System.Drawing.Point(519, 68);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(393, 236);
@@ -483,6 +485,7 @@ namespace DiceGame
             // 
             // pictureBoxPlayer4
             // 
+            this.pictureBoxPlayer4.Image = global::DiceGame.Properties.Resources.Deafult;
             this.pictureBoxPlayer4.Location = new System.Drawing.Point(262, 19);
             this.pictureBoxPlayer4.Name = "pictureBoxPlayer4";
             this.pictureBoxPlayer4.Size = new System.Drawing.Size(118, 98);
@@ -503,6 +506,7 @@ namespace DiceGame
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.textBox4);
+            this.panel4.Enabled = false;
             this.panel4.Location = new System.Drawing.Point(519, 337);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(393, 236);
@@ -595,6 +599,7 @@ namespace DiceGame
             this.panel5.Controls.Add(this.panel4);
             this.panel5.Controls.Add(this.panel2);
             this.panel5.Controls.Add(this.panel3);
+            this.panel5.Enabled = false;
             this.panel5.Location = new System.Drawing.Point(12, 121);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(939, 586);
@@ -613,6 +618,7 @@ namespace DiceGame
             this.panel3.Controls.Add(this.pictureBox18);
             this.panel3.Controls.Add(this.textBox3);
             this.panel3.Controls.Add(this.pictureBox19);
+            this.panel3.Enabled = false;
             this.panel3.Location = new System.Drawing.Point(23, 337);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(393, 236);
@@ -632,6 +638,7 @@ namespace DiceGame
             // 
             // pictureBoxPlayer3
             // 
+            this.pictureBoxPlayer3.Image = global::DiceGame.Properties.Resources.Deafult;
             this.pictureBoxPlayer3.Location = new System.Drawing.Point(262, 19);
             this.pictureBoxPlayer3.Name = "pictureBoxPlayer3";
             this.pictureBoxPlayer3.Size = new System.Drawing.Size(118, 98);
@@ -739,6 +746,7 @@ namespace DiceGame
             this.button1.TabIndex = 43;
             this.button1.Text = "EXIT";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -770,7 +778,6 @@ namespace DiceGame
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form2";
             this.Text = "++";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPlayer1)).EndInit();

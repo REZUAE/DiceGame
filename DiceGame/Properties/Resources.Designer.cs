@@ -273,6 +273,16 @@ namespace DiceGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Deafult {
+            get {
+                object obj = ResourceManager.GetObject("Deafult", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DiceMain {
             get {
                 object obj = ResourceManager.GetObject("DiceMain", resourceCulture);

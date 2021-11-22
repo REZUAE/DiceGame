@@ -17,28 +17,8 @@ namespace DiceGame
             InitializeComponent();
         }
 
-
-        public int NumberOfRounds;
+        public static int NumberOfRounds;
         public int NumberOfPlayers;
-
-
-
-
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
@@ -47,17 +27,18 @@ namespace DiceGame
                 NumberOfPlayers = Convert.ToInt32(txtNumbOfPlayers.Text);
                 if (NumberOfPlayers > 4)
                 {
-                    MessageBox.Show("Players range must be from 1 to 4");
+                    MessageBox.Show("Players range must be from 2 to 4");
                     break;
 
                 }
-                else if (NumberOfPlayers < 0)
+                else if (NumberOfPlayers < 2)
                 {
-                    MessageBox.Show("Players range must be from 1 to 4");
+                    MessageBox.Show("Players range must be from 2 to 4");
                     break;
                 }
                 else
                 {
+                    
                     break;
                 }
 
@@ -65,6 +46,7 @@ namespace DiceGame
             for (int i = 0; i < 99; i++)
             {
                 NumberOfRounds = Convert.ToInt32(txtRounds.Text);
+                commonData.TotalNumberOfRounds = NumberOfRounds;
                 if (NumberOfRounds > 30)
                 {
                     MessageBox.Show("Number of rounds should be from 5 to 30");
@@ -77,11 +59,45 @@ namespace DiceGame
                 }
                 else
                 {
+                    panel5.Enabled = true;
+                    if (NumberOfPlayers == 4)
+                    {
+                        panel1.Enabled = true;  //Panel of player 1
+                        panel2.Enabled = true;  //Panel of player 2
+                        panel3.Enabled = true;  //Panel of player 3
+                        panel4.Enabled = true;  //Panel of player 4
+                        break;
+                    }
+                    else if (NumberOfPlayers == 3)
+                    {
+                        panel1.Enabled = true;  //Panel of player 1
+                        panel2.Enabled = true;  //Panel of player 2
+                        panel3.Enabled = true;  //Panel of player 3
+                        break;
+                    }
+                    else if (NumberOfPlayers == 2)
+                    {
+                        panel1.Enabled = true;  //Panel of player 1
+                        panel2.Enabled = true;  //Panel of player 2
+                        break;
+                    }
+                    else if (NumberOfPlayers == 1)
+                    {
+                        panel1.Enabled = true;  //Panel of player 1
+                        break;
+                    }
+                    else
+                    {
+                        break;
+                    }
                     break;
                 }
+
             }
 
         }
+
+
 
         private void txtNumbOfPlayers_TextChanged(object sender, EventArgs e)
         {
@@ -257,8 +273,6 @@ namespace DiceGame
         private void pictureBox20_Click(object sender, EventArgs e)
         {
             pictureBoxPlayer4.Load("Avatars\\6.jpg");
-
-
             commonData.imgProfile4= pictureBoxPlayer4.ImageLocation;
         }
 
@@ -273,6 +287,11 @@ namespace DiceGame
             a2.ShowDialog();
 
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

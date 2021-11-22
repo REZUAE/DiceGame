@@ -21,7 +21,7 @@ namespace DiceGame
         {
             this.players[index] = player;
         }
-        public Boolean RollDice(int index)
+        public Boolean RollDice(int index) 
         {
             Random random = new Random();
             int score = random.Next(1, 6);
