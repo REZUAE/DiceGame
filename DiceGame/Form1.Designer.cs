@@ -91,7 +91,8 @@ namespace DiceGame
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::DiceGame.Properties.Resources.DiceMain;
+            this.pictureBox1.BackgroundImage = global::DiceGame.Properties.Resources.DiceMain1;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(47, 45);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(119, 108);
@@ -102,7 +103,8 @@ namespace DiceGame
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::DiceGame.Properties.Resources.DiceMain;
+            this.pictureBox2.BackgroundImage = global::DiceGame.Properties.Resources.DiceMain1;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Location = new System.Drawing.Point(531, 45);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(119, 108);
@@ -115,7 +117,7 @@ namespace DiceGame
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.BackgroundImage = global::DiceGame.Properties.Resources.Background;
+            this.BackgroundImage = global::DiceGame.Properties.Resources.Background1;
             this.ClientSize = new System.Drawing.Size(704, 573);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
