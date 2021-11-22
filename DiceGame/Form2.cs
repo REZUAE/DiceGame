@@ -17,6 +17,13 @@ namespace DiceGame
             InitializeComponent();
         }
 
+        int NumberOfPlayers;
+        int NumberOfRounds;
+
+
+
+
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -31,5 +38,17 @@ namespace DiceGame
         {
 
         }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNumbOfPlayers_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

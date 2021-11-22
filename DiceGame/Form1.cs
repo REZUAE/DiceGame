@@ -21,5 +21,17 @@ namespace DiceGame
         {
 
         }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 a1 = new Form2();
+            a1.ShowDialog();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

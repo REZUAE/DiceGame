@@ -49,6 +49,7 @@ namespace DiceGame
             this.btnStart.TabIndex = 0;
             this.btnStart.Text = "Start the Game";
             this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // btnExit
             // 
@@ -60,6 +61,7 @@ namespace DiceGame
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label1
             // 
